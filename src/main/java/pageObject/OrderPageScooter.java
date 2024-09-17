@@ -39,7 +39,6 @@ public class OrderPageScooter {
     private By orderConfirmButton = By.xpath(".//button[text()='Да']");
 
     private By confirmHeader = By.xpath(".//button[text()='Посмотреть статус']");
-
     public OrderPageScooter(WebDriver driver){
         this.driver = driver;
     }
