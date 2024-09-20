@@ -25,29 +25,21 @@ public class HomeFAQ {
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", table);
         // Создать объект класса с домашней страницей
         ScooterPage objHomePage = new ScooterPage(driver);
-
         // Проверка соответствия текста ответа с ожидаемым
         objHomePage.clickQuestion1();
         objHomePage.isCorrectText(objHomePage.getAnswer1(), answer1Text);
-
         objHomePage.clickQuestion2();
         objHomePage.isCorrectText(objHomePage.getAnswer2(), answer2Text);
-
         objHomePage.clickQuestion3();
         objHomePage.isCorrectText(objHomePage.getAnswer3(), answer3Text);
-
         objHomePage.clickQuestion4();
         objHomePage.isCorrectText(objHomePage.getAnswer4(), answer4Text);
-
         objHomePage.clickQuestion5();
         objHomePage.isCorrectText(objHomePage.getAnswer5(), answer5Text);
-
         objHomePage.clickQuestion6();
         objHomePage.isCorrectText(objHomePage.getAnswer6(), answer6Text);
-
         objHomePage.clickQuestion7();
         objHomePage.isCorrectText(objHomePage.getAnswer7(), answer7Text);
-
         objHomePage.clickQuestion8();
         objHomePage.isCorrectText(objHomePage.getAnswer8(), answer8Text);
 
